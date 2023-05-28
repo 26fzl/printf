@@ -23,9 +23,9 @@ int printf_pointer(va_list val)
 		return (y);
 	}
 
-	y = (unsigned long int)p;
+	i = (unsigned long int)p;
 	_putchar('0');
 	_putchar('x');
-	j = printf_hex_aux(y);
+	j = printf_hex_aux(i);
 	return (j + 2);
 }

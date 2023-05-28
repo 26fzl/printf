@@ -7,7 +7,7 @@
 int printf_int(va_list args)
 {
 	int m = va_arg(args, int);
-	int num, last = n % 10, digit, exp = 1;
+	int num, last = m % 10, digit, exp = 1;
 	int  x = 1;
 
 	m = m / 10;
@@ -57,7 +57,7 @@ int printf_dec(va_list args)
 	int exp = 1;
 
 	m = m / 10;
-	num = n;
+	num = m;
 
 	if (last < 0)
 	{

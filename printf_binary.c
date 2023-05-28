@@ -11,12 +11,12 @@ int printf_bin(va_list val)
 	int cont = 0;
 	int x, i = 1, j;
 	unsigned int num = va_arg(val, unsigned int);
-	unsigned int j;
+	unsigned int p;
 
 	for (x = 0; x < 32; x++)
 	{
-		j = ((i << (31 - x)) & num);
-		if (j >> (31 - i))
+		p = ((i << (31 - x)) & num);
+		if (p >> (31 - i))
 			flag = 1;
 		if (flag)
 		{

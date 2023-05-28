@@ -11,7 +11,7 @@ int printf_exclusive_string(va_list val)
 	int w, len = 0;
 	int cast;
 
-	w = va_arg(val, char *);
+	s = va_arg(val, char *);
 	if (s == NULL)
 		s = "(null)";
 	for (w = 0; s[w] != '\0'; w++)

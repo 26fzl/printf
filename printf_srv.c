@@ -17,6 +17,6 @@ int printf_srev(va_list args)
 	while (s[y] != '\0')
 		y++;
 	for (x = y - 1; x >= 0; x--)
-		_putchar(s[i]);
+		_putchar(s[x]);
 	return (y);
 }
