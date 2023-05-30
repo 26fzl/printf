@@ -9,7 +9,7 @@ int printf_pointer(va_list val)
 {
 	void *p;
 	char *s = "(nil)";
-	long int i;
+	unsigned long int i;
 	int j;
 	int y;
 
