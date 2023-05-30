@@ -1,9 +1,11 @@
 #include "main.h"
 
+int printf_hex_aux(unsigned long int num);
+
 /**
  * printf_pointer - prints an hexdecimal number.
  * @val: arguments of printf.
- * Return: counter.
+ * Return: number of characters printed.
  */
 int printf_pointer(va_list val)
 {
