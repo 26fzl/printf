@@ -22,7 +22,7 @@ int printf_bin(va_list val)
 	{
 		if ((num >> i) & 1)
 			flag = 1;
-		
+
 		if (flag)
 		{
 			_putchar((num >> i) & 1 ? '1' : '0');
